@@ -1,0 +1,57 @@
+{
+  "name": "babel-extract-gettext",
+  "version": "0.2.2",
+  "description": "Babel plugin to extract strings from React components and gettext-like functions into a gettext PO file",
+  "main": "plugin.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest",
+    "test-watch": "NODE_ENV=test jest --watch",
+    "test-ci": "NODE_ENV=test jest --coverage && codecov",
+    "lint": "eslint ."
+  },
+  "author": "rtymchyk",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rtymchyk/babel-extract-gettext.git"
+  },
+  "keywords": [
+    "i18n",
+    "extract",
+    "translate",
+    "gettext",
+    "babel",
+    "plugin",
+    "react"
+  ],
+  "engines": {
+    "node": ">=v6.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "gettext-parser": "^1.2.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-preset-env": "^1.6.0",
+    "codecov": "^2.2.0",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^20.0.4"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src/",
+      "<rootDir>/test/"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "./src"
+    ]
+  }
+}

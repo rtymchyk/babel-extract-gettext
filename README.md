@@ -1,2 +1,2 @@
 # babel-extract-gettext
-Deprecated: use babel-plugin-extract-text
+This package has been moved to https://github.com/rtymchyk/babel-plugin-extract-text
